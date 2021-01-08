@@ -5,24 +5,29 @@
 #pragma once
 
 const std::string windowsAsciiArt =
- 
-  
+      "\n _                    _        _      \n"
+        "| |__ _ _  _ _  ___ _| |_ ___ | |__ _ _  ___ ._ _  ___  \n"
+        "| / /| '_>| | || . \\ | | / . \\| / /| '_>/ . \\| ' |<_> | \n"
+        "|_\\_\\|_|  `_. ||  _/ |_| \\___/|_\\_\\|_|  \\___/|_|_|<___| \n"
+        "          <___'|_|                                      \n";
+
 const std::string nonWindowsAsciiArt =
-          "\n                                                                   "\n
-          "   d888b   .d8b.  .88b  d88. d88888b d8888b. .d8888. d8b   db d88888b .d8888. d888888b  .o88b.  .d88b.  d888888b d8b   db"\n 
-          "  88' Y8b d8' `8b 88'YbdP`88 88'     88  `8D 88'  YP 888o  88 88'     88'  YP `~~88~~' d8P  Y8 .8P  Y8.   `88'   888o  88 "\n
-          "  88      88ooo88 88  88  88 88ooooo 88oobY' `8bo.   88V8o 88 88ooooo `8bo.      88    8P      88    88    88    88V8o 88 "\n
-          "  88  ooo 88~~~88 88  88  88 88~~~~~ 88`8b     `Y8b. 88 V8o88 88~~~~~   `Y8b.    88    8b      88    88    88    88 V8o88 "\n
-          "  88. ~8~ 88   88 88  88  88 88.     88 `88. db   8D 88  V888 88.     db   8D    88    Y8b  d8 `8b  d8'   .88.   88  V888 "\n
-          "   Y888P  YP   YP YP  YP  YP Y88888P 88   YD `8888Y' VP   V8P Y88888P `8888Y'    YP     `Y88P'  `Y88P'  Y888888P VP   V8P "\n;
-                                                                                                                                                                                           
-                                             
+      "\n                                                                            \n"
+        "oooo                                            .             oooo     \n"
+        "`888                                          .o8             `888                                                 \n"
+        " 888  oooo  oooo d8b oooo    ooo oo.ooooo.  .o888oo  .ooooo.   888  oooo  oooo d8b  .ooooo.  ooo. .oo.    .oooo.   \n"
+        " 888 .8P'   `888\"\"8P  `88.  .8'   888' `88b   888   d88' `88b  888 .8P'   `888\"\"8P d88' `88b `888P\"Y88b  `P  )88b  \n"
+        " 888888.     888       `88..8'    888   888   888   888   888  888888.     888     888   888  888   888   .oP\"888  \n"
+        " 888 `88b.   888        `888'     888   888   888 . 888   888  888 `88b.   888     888   888  888   888  d8(  888  \n"
+        "o888o o888o d888b        .8'      888bod8P'   \"888\" `Y8bod8P' o888o o888o d888b    `Y8bod8P' o888o o888o `Y888\"\"8o \n"
+        "                     .o..P'       888                                                                              \n"
+        "                     `Y8P'       o888o                                                                             \n";
 
 /* Windows has some characters it won't display in a terminal. If your ascii
    art works fine on Windows and Linux terminals, just replace 'asciiArt' with
    the art itself, and remove these two #ifdefs and above ascii arts */
 #ifdef _WIN32
-const std::string asciiArt = windowsAsciiArt; 
+const std::string asciiArt = windowsAsciiArt;
 #else
 const std::string asciiArt = nonWindowsAsciiArt;
 #endif

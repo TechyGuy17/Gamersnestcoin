@@ -2,6 +2,8 @@
 //
 // Please see the included LICENSE file for more information
 
+
+//This file is not used for GNC, just here incase we want to implement it again
 #pragma once
 
 const std::string windowsAsciiArt =

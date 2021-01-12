@@ -137,7 +137,7 @@ The binaries will be in the `src` folder when you are complete.
 
 
 #### Windows
-OBSERVE, right now this isn't working on windows but im trying to figure it out, for the time being if you use windows please use thw WSL for ubuntu
+
 ##### Prerequisites
 
 - Install [Visual Studio 2017 Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&page=inlineinstall)
@@ -155,7 +155,7 @@ OBSERVE, right now this isn't working on windows but im trying to figure it out,
 
 If you have errors on this step about not being able to find the following static libraries, you may need to update your cmake. Open 'Visual Studio Installer' and click 'Update'.
 
-- `MSBuild kryptokrona.sln /p:Configuration=Release /m`
+- `MSBuild TurtleCoin.sln /p:Configuration=Release /m`
 
 The binaries will be in the `src/Release` folder when you are complete.
 

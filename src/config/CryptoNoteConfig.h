@@ -68,7 +68,7 @@ TurtleCoind --print-genesis-tx --genesis-block-reward-address TRTLv2Fyavy8CXG8BP
 * You should see your premine appear in the previously generated wallet.
 
 */
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "011401ff0001d2c60e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121013c6bc7ce2a290f53e465366325be1517bb6f21623e110375e29cbbc3a86ba1ba";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
@@ -249,7 +249,7 @@ const char     LATEST_VERSION_URL[]                          = "https://github.c
 const std::string LICENSE_URL                                = "https://github.com/TechyGuy17/Gamersnestcoin/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0xe2, 0x45, 0xc8, 0xa4, 0xc1, 0xa6, 0xc5, 0x2d, 0x9e, 0xf5, 0xd5, 0x89, 0xbc, 0x62, 0x66, 0xac  }
+    {  0xe2, 0x45, 0xc8, 0xa4, 0xc1, 0xa6, 0xc5, 0x2d, 0x9e, 0xf5, 0xd5, 0x89, 0xbc, 0x62, 0x66, 0xad  }
 };
 
 const char* const SEED_NODES[] = {
